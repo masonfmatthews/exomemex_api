@@ -1,5 +1,5 @@
 class Api::V1::ClipsController < ApplicationController
   def show
-    render json: "Made it!"
+    render json: {message: "Made it!"}
   end
 end
