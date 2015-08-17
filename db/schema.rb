@@ -25,8 +25,9 @@ ActiveRecord::Schema.define(version: 20150814145721) do
 
   create_table "people", force: :cascade do |t|
     t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "year_of_birth"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
 end
