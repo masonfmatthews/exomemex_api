@@ -27,3 +27,16 @@ Feature Roadmap:
 * Users can create clips for other people
 * People can allow other users to listen to their clips
 * Speech-to-Text integration
+
+Potential Goals:
+
+* Store memories for children as they're growing up
+* Store memories for family members as we age
+* Store bodies of knowledge for personal future reference/connection-finding
+* Store bodies of knowledge for writing articles/books?
+
+Potential Modes:
+
+* Journaling
+* Reflection
+* Interviews
