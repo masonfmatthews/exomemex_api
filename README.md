@@ -23,10 +23,13 @@ Fixes/Improvements:
 
 Feature Roadmap:
 
-* People can be users
-* Users can create clips for other people
-* People can allow other users to listen to their clips
-* Speech-to-Text integration
+1. Users can add new people
+1. People can log in as users
+1. Users only see people they have permissions to record for (and can't add people who already exist)
+1. Users can record clips for any person they can record for
+1. Users can listen to clips for any person they can record for (themselves included)
+1. Users can add other listeners for any person they can record for (themselves included)
+1. Users can see text versions of all clips
 
 Potential Goals:
 
