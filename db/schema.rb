@@ -15,19 +15,22 @@ ActiveRecord::Schema.define(version: 20150814145721) do
 
   create_table "clips", force: :cascade do |t|
     t.string   "name"
-    t.datetime "created_at",        null: false
-    t.datetime "updated_at",        null: false
+    t.integer  "user_id"
     t.string   "clip_file_name"
     t.string   "clip_content_type"
     t.integer  "clip_file_size"
     t.datetime "clip_updated_at"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
   end
 
-  create_table "people", force: :cascade do |t|
+  create_table "users", force: :cascade do |t|
     t.string   "name"
-    t.integer  "year_of_birth"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.string   "email"
+    t.string   "password_digest"
+    t.string   "token"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
   end
 
 end

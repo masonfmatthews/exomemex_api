@@ -5,6 +5,7 @@ ruby '2.2.3'
 gem 'rails', '4.2.1'
 gem 'rails-api'
 
+gem 'bcrypt'
 gem 'paperclip', '~> 4.3'
 
 group :development do
