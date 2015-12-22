@@ -5,7 +5,6 @@ ruby '2.2.3'
 gem 'rails', '4.2.1'
 gem 'rails-api'
 
-gem 'puma'
 gem 'paperclip', '~> 4.3'
 
 group :development do
@@ -18,6 +17,7 @@ group :development, :test do
 end
 
 group :production do
+  gem 'puma'
   gem 'pg'
   gem 'rails_12factor'
   gem 'aws-sdk', '~> 1.6'
