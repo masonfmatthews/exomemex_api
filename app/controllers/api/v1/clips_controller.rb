@@ -1,4 +1,5 @@
 class Api::V1::ClipsController < ApplicationController
+  before_action :check_for_token
 
   def index
     render json: Clip.where(user_id: params[:user_id])
