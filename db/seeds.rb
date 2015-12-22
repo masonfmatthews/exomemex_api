@@ -6,6 +6,6 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-m = Person.create!(name: "Mason", email: "mason.f.matthews@gmail.com")
-Clip.create!(name: "First Clip", person: m)
-Clip.create!(name: "Next Clip", person: m)
+m = User.create!(name: "Mason", email: "mason.f.matthews@gmail.com")
+Clip.create!(name: "First Clip", user: m)
+Clip.create!(name: "Next Clip", user: m)

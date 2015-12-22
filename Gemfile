@@ -1,17 +1,20 @@
 source 'https://rubygems.org'
 
-ruby '2.2.2'
+ruby '2.2.3'
 
 gem 'rails', '4.2.1'
 gem 'rails-api'
-gem 'spring', :group => :development
-gem 'byebug'
 
 gem 'puma'
 gem 'paperclip', '~> 4.3'
 
+group :development do
+  gem 'spring'
+end
+
 group :development, :test do
   gem 'sqlite3'
+  gem 'byebug'
 end
 
 group :production do

@@ -1,7 +1,7 @@
 class Api::V1::ClipsController < ApplicationController
 
   def index
-    render json: Clip.where(person_id: params[:person_id])
+    render json: Clip.where(user_id: params[:user_id])
   end
 
   def show
@@ -14,6 +14,6 @@ class Api::V1::ClipsController < ApplicationController
   end
 
   private def clip_params
-    params.require(:clip).permit(:name, :clip)
+    params.require(:clip).permit(:name, :user_id, :clip)
   end
 end
