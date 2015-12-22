@@ -1,7 +1,7 @@
 class Api::V1::ClipsController < ApplicationController
 
   def index
-    render json: Clip.all
+    render json: Clip.where(person_id: params[:person_id])
   end
 
   def show
