@@ -10,7 +10,7 @@ class Api::V1::ClipsController < ApplicationController
   end
 
   def create
-    clip = Clip.create!(clip_params)
+    clip = Clip.create!(clip_params.merge({user: @current_user}))
     render json: {clip_url: clip.clip.url}
   end
 
