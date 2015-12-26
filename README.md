@@ -1,7 +1,7 @@
 Exomemex API
 ======
 
-Exomemex is an app which allows to people to offload their thoughts and memories in a digital form via audio recordings so that they can be accessed later.  A users of the system might be recording someone else, and might be listening to someone else.
+Exomemex is an app which allows to people to offload their thoughts and memories in a digital form via audio recordings so that they can be accessed later.
 
 API Technologies Used:
 
@@ -11,35 +11,19 @@ API Technologies Used:
 
 App Technologies Used (in a separate repository):
 
-* Swift
+* Swift (via XCode)
 
 
 Next Steps for Exomemex API
 -------
 
-Fixes/Improvements:
-
-* Authentication Needed
-
-Feature Roadmap:
-
-1. Users can add new people
-1. People can log in as users
-1. Users only see people they have permissions to record for (and can't add people who already exist)
-1. Users can record clips for any person they can record for
-1. Users can listen to clips for any person they can record for (themselves included)
-1. Users can add other listeners for any person they can record for (themselves included)
-1. Users can see text versions of all clips
-
-Potential Goals:
-
-* Store memories for children as they're growing up
-* Store memories for family members as we age
-* Store bodies of knowledge for personal future reference/connection-finding
-* Store bodies of knowledge for writing articles/books?
-
-Potential Modes:
-
-* Journaling
-* Reflection
-* Interviews
+* Users have many family members
+* Emails can be sent when clips are recorded
+* Integrate with Watson API
+* Clips have text
+* Clips belong to questions
+* Users can create blank clips for questions they want to answer next
+* Users can create blank clips for questions they never want to answer
+* Questions belong to users
+* Clips can be searched
+* Users have profile pictures
