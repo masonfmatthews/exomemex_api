@@ -17,6 +17,7 @@ App Technologies Used (in a separate repository):
 Next Steps for Exomemex API
 -------
 
+* Improve authentication to expire tokens
 * Users have many family members
 * Emails can be sent when clips are recorded
 * Integrate with Watson API
