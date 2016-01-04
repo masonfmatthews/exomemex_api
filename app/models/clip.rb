@@ -4,7 +4,8 @@ class Clip < ActiveRecord::Base
   validates :name, presence: true
   validates :user, presence: true
 
-  has_attached_file :clip
+  has_attached_file :clip,
+      default_url: ""
   validates_attachment_content_type :clip, :content_type => /\Aaudio\/.*\Z/
 
   def as_json(args)
