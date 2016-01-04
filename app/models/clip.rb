@@ -7,4 +7,7 @@ class Clip < ActiveRecord::Base
   has_attached_file :clip
   validates_attachment_content_type :clip, :content_type => /\Aaudio\/.*\Z/
 
+  def as_json(args)
+    {id: id, name: name, url: clip.url}
+  end
 end
