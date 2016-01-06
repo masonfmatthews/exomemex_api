@@ -2,6 +2,7 @@ class Api::V1::UsersController < ApplicationController
   before_action :check_for_token
 
   def index
+    ClipMailer.new_clip("masonfoxmatthews@yahoo.com").deliver_now
     render json: User.all
   end
 
